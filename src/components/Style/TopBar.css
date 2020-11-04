@@ -1,0 +1,12 @@
+.Topbar {
+    background-color: black;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
+}
+
+.logo__image {
+    width: 50%;
+}

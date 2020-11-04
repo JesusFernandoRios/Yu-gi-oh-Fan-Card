@@ -1,0 +1,12 @@
+.home{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.h__one {
+    text-align: center;
+}
