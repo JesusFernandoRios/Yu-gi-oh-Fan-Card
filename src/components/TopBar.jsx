@@ -13,6 +13,7 @@ function TopBar() {
                     src={require('../Images/logo.png')}
                     />
                 </Navbar.Brand>
+                
             </Navbar>
         </>
     )

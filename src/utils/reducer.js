@@ -1,14 +1,9 @@
 
-// this is the store
+// this is the global State
 export const initialState = {
     cards:[],
     user:null
 }
-
-
-export const getBasketTotal = (basket) =>
-basket?.reduce((amount,item) => item.price + amount,0)
-
 
 function reducer(state, action) {
     // this console log is important 
