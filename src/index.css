@@ -9,7 +9,7 @@ body {
   background-image: url('./Images/background.jpg');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: block;
+  width: 100%;
 }

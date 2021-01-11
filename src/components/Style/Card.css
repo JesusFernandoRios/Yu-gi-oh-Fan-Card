@@ -1,0 +1,9 @@
+.randomCard {
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    margin-left: auto;
+}

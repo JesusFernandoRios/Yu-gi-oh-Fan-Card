@@ -1,12 +1,23 @@
 .home{
+    margin-top: 20px;
+    padding: 20px;
     color: white;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-right: auto;
+    width: 70%;
+    float: left;
 }
 
 .h__one {
     text-align: center;
+}
+
+.about__yugi {
+    font-size: 25px;
+    padding: 10px;
+}
+.volume__one {
+    float: left;
+    margin: 20px;
 }
