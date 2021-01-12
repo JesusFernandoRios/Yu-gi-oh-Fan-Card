@@ -3,7 +3,6 @@ import './Style/Card.css'
 
 export default function Card({random}) {
 
-    console.log("cards", random)
     return(
         <>
             {!random ? null :
