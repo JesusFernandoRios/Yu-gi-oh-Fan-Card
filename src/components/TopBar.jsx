@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import './Style/TopBar.css'
+import {Link} from 'react-router-dom'
 
 function TopBar() {
     return (
@@ -14,6 +15,9 @@ function TopBar() {
                     />
                 </Navbar.Brand>
                 
+                <Link to="/archetype">
+                    <h1>Archetype</h1>
+                </Link>
             </Navbar>
         </>
     )

@@ -9,6 +9,11 @@
     float: left;
 }
 
+.information {
+    margin-top: 30px;
+    padding: 20px;
+}
+
 .h__one {
     text-align: center;
 }
@@ -17,6 +22,7 @@
     font-size: 25px;
     padding: 10px;
 }
+
 .volume__one {
     float: left;
     margin: 20px;
