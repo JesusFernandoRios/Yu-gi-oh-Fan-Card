@@ -28,6 +28,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/archetype">
+            <TopBar/>
             <Archetype/>
         </Route>
         <Route path="/">

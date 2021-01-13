@@ -5,6 +5,7 @@ import "./Style/Archetype.css"
 function Archetype() {
     const [input, setInput] = useState();
     const [dataBack, setDataBack] = useState();
+    const [error, setError] = useState()
 
 
     const getArchetype = () => {
@@ -14,11 +15,11 @@ function Archetype() {
         .then(res => res.json())
         .then(data => {
             setDataBack(data.data)
-        })
+        }).catch(err => setError(err))
     }
 
     return (
-        <div className="container">
+        <div className="archetype__container">
 
             <div className="infomation">
                 <h2>Use the Search bar below to find your desired archetype</h2>
@@ -32,9 +33,11 @@ function Archetype() {
             <div className="card__container">
                 {dataBack ? dataBack.map( (e, index) => {
                     return(
+
                     <div className="archetype" key={index}>
                         <img src={e.card_images[0].image_url}/>
                     </div>
+
                 )   
                 }) : null}
             </div>
