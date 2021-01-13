@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import Card from './Card'
+import "./Style/Archetype.css"
+
 
 function Archetype() {
     const [input, setInput] = useState();
@@ -8,29 +9,36 @@ function Archetype() {
 
     const getArchetype = () => {
 
+        setDataBack("")
         fetch(`https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=${input}`)
         .then(res => res.json())
         .then(data => {
             setDataBack(data.data)
         })
     }
-    console.log(dataBack)
 
     return (
         <div className="container">
+
+            <div className="infomation">
+                <h2>Use the Search bar below to find your desired archetype</h2>
+            </div>
             <div className="search">
                 <input type="text" name="archetype" onChange={e => setInput(e.target.value)}/>
                 <button onClick={() => getArchetype()}>Search</button>
                 <p> here is the input: {input}</p> 
             </div>
             
-            {dataBack ? dataBack.map( (e, index) => {
-                return(
-                <div className="archetype" key={index}>
-                    <img src={e.card_images[0].image_url}/>
-                </div>
+            <div className="card__container">
+                {dataBack ? dataBack.map( (e, index) => {
+                    return(
+                    <div className="archetype" key={index}>
+                        <img src={e.card_images[0].image_url}/>
+                    </div>
                 )   
-            }) : null}
+                }) : null}
+            </div>
+            
         </div>
     )
 }
