@@ -7,7 +7,7 @@ function TopBar() {
     return (
         <>
             <Navbar className="Topbar">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/home">
                     <img
                     className="logo__image"
                     alt="Logo"
