@@ -35,6 +35,7 @@ function App() {
           <TopBar/>
           <Home/>
           <Card random={random}/>
+          <Archetype/>
         </Route>
       </Switch>
     </Router>
