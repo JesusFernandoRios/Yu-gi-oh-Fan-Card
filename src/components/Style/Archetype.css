@@ -24,4 +24,5 @@
 
 .archetypeCards:active {
     transform: scale(4);
+    -webkit-user-drag: none;
 }
