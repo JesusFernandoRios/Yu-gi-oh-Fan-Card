@@ -35,7 +35,7 @@ function Archetype() {
                     return(
 
                     <div className="archetype" key={index}>
-                        <img classname="randomImage" src={e.card_images[0].image_url}/>
+                        <img className="archetypeCards" src={e.card_images[0].image_url}/>
                     </div>
 
                 )   

@@ -1,27 +1,36 @@
 .archetype__container {
-    width: 100%;
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
 
 }
 
 .card__container {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-auto-rows: 200px;
-    padding: 20px;
+    padding: 50px;
     border: 3px solid red;
     border-radius: 20px;
     background-color: black;
 }
 
-img {
-    width: 140px;
+.archetype {
+    margin: 0;
+    padding: 0;
 }
 
-.archetype:hover {
-    transform: scale(3.5);
+.archetypeCards {
+    width: 120px;
     margin-left: auto;
     margin-right: auto;
-    z-index: 100;
+}
+
+.archetypeCards:hover {
+    transform: scale(4);
+    margin-left: auto;
+    margin-right: auto;
+    
     
 }
