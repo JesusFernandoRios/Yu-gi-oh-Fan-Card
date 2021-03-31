@@ -6,8 +6,15 @@
     width: 30%;
     padding: 20px;
     margin-left: auto;
+    z-index: 100;
+    
 }
 
 .randomImage {
     width: 400px;
+}
+
+.randomImage:hover {
+    transform: scale(1.5)
+
 }
